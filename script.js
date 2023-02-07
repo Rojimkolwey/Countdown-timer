@@ -20,10 +20,11 @@ function countdown() {
   minutesE1.innerHTML =formatTime(minutes);
   secondsE1.innerHTML = formatTime(seconds);
 }
-// function formatTime(time) {
-//   return time < 10 ? "0${time}" : time;
-// }
-//initial call
+function formatTime(time) {
+  return time < 10 ? `0${time}` : time;
+}
+// initial call
 
 countdown();
 setInterval(countdown, 1000);
+
